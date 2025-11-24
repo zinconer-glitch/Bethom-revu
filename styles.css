@@ -288,6 +288,7 @@ footer {
 
     .projet {
         flex-direction: column;
+        gap : 20px;
     }
 
     .projet-image {
@@ -327,8 +328,8 @@ footer {
     
     }
 
-
     button {
         max-width: 100%;
 
+}
 }
