@@ -269,6 +269,10 @@ footer {
 
 
 @media (max-width: 700px) {
+
+    body {
+        max-width: 100%;
+    }
    
     .nav-link {
         display: none;
@@ -306,6 +310,7 @@ footer {
 
     header {
         flex-direction: column-reverse;
+        text-align: center;
 
     }
    
@@ -317,5 +322,9 @@ footer {
         text-align: center;
     }
 
+    form {
+        max-width: 100%;
+    
+    }
 
 }
