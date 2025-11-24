@@ -1,0 +1,321 @@
+/***** GENERAL *****/
+
+body {
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+    color: #21243D;
+}
+
+hr {
+    width: 858px;
+    margin-left: 0;
+    color: #dbd0d0;
+}
+
+/***** NAVIGATION *****/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 15px auto 0 auto;
+}
+
+#nav-links {
+    display: flex;
+    gap : 65px;
+    
+}
+
+.nav-link {
+    color:black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#menu-button {
+    display: none;
+}
+
+
+/***** HEADER *****/
+
+header {
+    display: flex;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin:75px auto;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 0;
+}
+
+#button-cv {
+    background-color: #FF6464;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+#subtitle {
+    font-size: 16px;
+    margin:30px 0;
+}
+
+#header-content {
+    width: 630px;
+}
+
+/***** BLOG *****/
+
+#blog {
+    background-color: #EDF7FA;
+    padding-bottom: 35px;
+}
+
+#blog-content {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 60px;
+    letter-spacing: 0px;
+}
+
+#articles {
+    display:flex;
+    justify-content: space-between;
+}
+
+.article-blog {
+
+    background-color: white;
+    border-radius: 4px;
+    width: 543px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    max-width: 48%;
+}
+.article-title {
+    font-size: 26px;
+}
+
+.date-categorie {
+    font-size: 18px;
+    display: flex;
+    gap: 25px;
+}
+
+.article-description {
+    font-size: 16px;
+}
+    
+/***** PORTFOLIO *****/
+
+#projets {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.projet {
+    display: flex;
+    gap: 90px;
+    margin-bottom: 40px;
+    padding: 40px 0;
+}
+
+.projet-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.projet-date {
+    font-size: 18px;
+    font-weight: 900px;
+    background-color: #142850;
+    color: white;
+    border-radius:16px;
+    padding: 0 15px;
+}
+
+.projet-type {
+    font-size: 20px;
+    font-weight: 400px;
+    color: #8695A4;
+    margin-left: 30px;
+}
+
+.projet-image {
+    width: 246px;
+    height: 180px;
+}
+
+.article-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+/***** CONTACT *****/
+
+#contact {
+
+   max-width: 1200px;
+   padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#contact-content {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-title {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+#contact-intro {
+    font-size:20px;
+}
+
+#email {
+    font-size: 16px;
+}
+
+.socials-link {
+
+    font-size: 16px;
+    color:#000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+#coordonnees {
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+}
+
+input, select, textarea {
+    background-color: #F7F7F7;
+    border: none;
+    height: 46px;
+}
+
+textarea#message {
+    height: 165px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    padding:13px 246px;
+    border: none;
+}
+
+/***** FOOTER *****/
+
+footer {
+    padding-top: 100px;
+    text-align: center;
+}
+
+#icons-socials {
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#copyright {
+    font-size: 14px;
+    color: #21243D;
+}
+
+
+@media (max-width: 700px) {
+   
+    .nav-link {
+        display: none;
+    }
+
+    #menu-button {
+        display: block;
+    }
+
+    #coordonnees {
+        display: none;
+    }
+
+    .projet {
+        flex-direction: column;
+    }
+
+    .projet-image {
+        width: 100%;
+    }
+
+    #articles {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-blog {
+        max-width: none;
+        width: 100%;
+    }
+
+    .date-categorie {
+        gap: 5px;
+    }
+
+    header {
+        flex-direction: column-reverse;
+
+    }
+   
+    #header-content {
+        width: 100%;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+
+
+}
